@@ -62,14 +62,19 @@ function App() {
       <div className="Showpassword">
         {passwordlist.map((val) => {
           return (
-            <div
+            <div className="main">
+              <div
               className="password"
-              onClick={() => {
-                decryption({ password: val.password, iv: val.iv, id: val.id });
-              }}
+              
             >
               <h3>{val.title}</h3>
+             
             </div>
+             <button className="show" onClick={() => {
+                decryption({ password: val.password, iv: val.iv, id: val.id });
+              }}>Show password</button>
+            </div>
+            
           );
         })}
       </div>

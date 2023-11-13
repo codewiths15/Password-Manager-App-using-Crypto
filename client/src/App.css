@@ -46,15 +46,31 @@ button:hover{
 }
 
 .password{
-  width: 400px;
-  height: 70px;
+  width: 200px;
+  height: 50px;
   background-color: blue;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  
   border-radius: 10px;
-  font-size: 20px;
-  cursor: pointer;
+  font-size: 15px;
+ 
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.show{
+  background-color: rgb(6, 240, 6);
+}
+
+.show:hover{
+  background-color: rgb(3, 144, 3);
+  color: white;
 }
